@@ -1,16 +1,84 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
-    body{
-        background: #BDBDBD;
-    }
-    
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+  //background: green;
+  background: url("../assets/img/poker_bkg_img.jpg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-*/
+.card {
+  //background: white;
+  background-image: url("../assets/img/poker_card_bkg.jpg");
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 500px;
+  border-style: ridge;
+  border-color: gray;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.heart::after {
+  content: "\2665";
+  color: red;
+  font-size: 100px;
+}
+
+.diamond::after {
+  content: "\2666";
+  color: red;
+  font-size: 100px;
+}
+
+.club::after {
+  content: "\2663";
+  font-size: 100px;
+}
+
+.spade::after {
+  content: "\2660";
+  font-size: 100px;
+}
+
+#topSuit,
+#bottomSuit {
+  padding-left: 20px;
+}
+
+#cardNumber {
+  text-align: center;
+  margin: auto;
+  font-size: 120px;
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: grab;
+}
+
+.hitme {
+  margin-top: 20px;
+}
+
+/*.myButton {
+  background: url(../assets/img/myhand.png) no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 492px;
+  height: 472px;
+  margin-top: -70px;
+  margin-left: 40px;
+}
+
+.myButton:active {
+  background: url(../assets/img/myhand.png) no-repeat;
+}*/
